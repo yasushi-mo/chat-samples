@@ -15,7 +15,6 @@ export function App() {
             <Message
               model={{
                 message: "こんにちは！",
-                sentTime: "just now",
                 sender: "田中",
                 direction: "incoming",
                 position: "single",
@@ -24,7 +23,6 @@ export function App() {
             <Message
               model={{
                 message: "こんにちは！元気ですか？",
-                sentTime: "just now",
                 sender: "自分",
                 direction: "outgoing",
                 position: "single",
