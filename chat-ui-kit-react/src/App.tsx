@@ -1,22 +1,39 @@
-import { APITester } from "./APITester";
-import "./index.css";
-
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
+import {
+  MainContainer,
+  ChatContainer,
+  MessageList,
+  Message,
+  MessageInput,
+} from "@chatscope/chat-ui-kit-react";
 
 export function App() {
   return (
-    <div className="app">
-      <div className="logo-container">
-        <img src={logo} alt="Bun Logo" className="logo bun-logo" />
-        <img src={reactLogo} alt="React Logo" className="logo react-logo" />
-      </div>
-
-      <h1>Bun + React</h1>
-      <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
-      </p>
-      <APITester />
+    <div style={{ position: "relative", height: "500px" }}>
+      <MainContainer>
+        <ChatContainer>
+          <MessageList>
+            <Message
+              model={{
+                message: "こんにちは！",
+                sentTime: "just now",
+                sender: "田中",
+                direction: "incoming",
+                position: "single",
+              }}
+            />
+            <Message
+              model={{
+                message: "こんにちは！元気ですか？",
+                sentTime: "just now",
+                sender: "自分",
+                direction: "outgoing",
+                position: "single",
+              }}
+            />
+          </MessageList>
+          <MessageInput placeholder="メッセージを入力..." />
+        </ChatContainer>
+      </MainContainer>
     </div>
   );
 }
