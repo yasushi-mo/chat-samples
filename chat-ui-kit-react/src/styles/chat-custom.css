@@ -1,0 +1,24 @@
+/* メインコンテナのカスタマイズ */
+.cs-main-container {
+  --main-container-bg-color: #f5f5f5;
+}
+
+/* メッセージのカスタマイズ */
+.cs-message__content {
+  --message-content-bg-color: #e3f2fd;
+}
+
+.cs-message--outgoing .cs-message__content {
+  --message-content-bg-color: #c8e6c9;
+}
+
+/* 入力エリアのカスタマイズ */
+.cs-message-input {
+  --message-input-bg-color: #ffffff;
+  --message-input-border-color: #e0e0e0;
+}
+
+/* 会話リストのカスタマイズ */
+.cs-conversation--active {
+  --conversation-bg-color: #e3f2fd;
+}

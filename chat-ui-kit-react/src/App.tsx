@@ -6,7 +6,7 @@ import { ContinuousChat } from "./components/ContinuousChat";
 import { DynamicChat } from "./components/DynamicChat";
 
 export function App() {
-  return <DynamicChat />;
+  return <ChatList />;
 }
 
 export default App;
